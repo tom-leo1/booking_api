@@ -19,10 +19,10 @@ public class ResortApplication {
 
 			try{
 				mongoTemplate.getDb().listCollectionNames().first();
-				IO.println("Connected to MongoDB");
+				System.out.println("Connected to MongoDB");
 			}
 			catch (Exception e){
-				IO.println("Error in connecting to MongoDB"+e.getMessage());
+				System.out.println("Error in connecting to MongoDB"+e.getMessage());
 			}
 		};
 	};

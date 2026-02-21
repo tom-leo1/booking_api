@@ -40,7 +40,7 @@ public class UserController {
         }
         catch (Exception e){
             e.printStackTrace();
-            IO.println("Invalid user details");
+            System.out.println("Invalid user details");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("error", "Invalid User details"));
         }
     }
